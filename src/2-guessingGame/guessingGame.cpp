@@ -17,6 +17,7 @@ void guessingGame(){
     while (found != true)
     {
         cin >> guess;
+        //TODO: error catch for char
         ++tries;
         if (guess > randNum) {
             cout << "Too high, please try again." << endl;

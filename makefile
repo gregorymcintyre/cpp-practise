@@ -3,6 +3,7 @@ CXX = g++
 
 ## Directories
 SRCDIR = src
+BLDDIR = build
 
 ## Source files and object files
 SRCS = $(wildcard $(SRCDIR)/*/*.cpp)
@@ -11,7 +12,7 @@ SRCS = $(wildcard $(SRCDIR)/*/*.cpp)
 TARGET = cpp-practise
 
 cpp-practise: $(TARGET).cpp $(SRCS)
-	$(CXX) -o $(TARGET) $(TARGET).cpp $(SRCS)
+	$(CXX) -o $(BLDDIR)/$(TARGET) $(TARGET).cpp $(SRCS)
 
 clean: 
-	$(RM) $(TARGET)
+	$(RM) $(BLDDIR)/$(TARGET)

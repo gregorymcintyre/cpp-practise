@@ -1,16 +1,16 @@
 // Your First C++ Program
 
 #include <iostream>
-#include "1-arrayInOut/arrayInOut.h"
-#include "2-guessingGame/guessingGame.h"
-#include "3-calculator/calculator.h"
+#include "src/1-arrayInOut/arrayInOut.h"
+#include "src/2-guessingGame/guessingGame.h"
+#include "src/3-calculator/calculator.h"
 
 using namespace std;
 
 int main() {
     int choice;
 
-    std::cout << "=======================\n" << "cprogramming challenges-maker\n" << "=======================\n" << endl;
+    std::cout << "=======================\n" << "cprogramming challenges\n" << "=======================\n" << endl;
     cout << "Enter challenge number ";
     cin >> choice;
     cout << endl;

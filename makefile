@@ -1,2 +1,14 @@
-challengesmake: challenges.cpp 1-arrayInOut/arrayInOut.cpp 2-guessingGame/guessingGame.cpp 3-calculator/calculator.cpp
-	g++ -o challenges challenges.cpp 1-arrayInOut/arrayInOut.cpp 2-guessingGame/guessingGame.cpp 3-calculator/calculator.cpp
+## Compiler and compiler flags
+CXX = g++
+
+## Directories
+SRCDIR = src
+
+## Source files and object files
+SRCS = $(wildcard $(SRCDIR)/*/*.cpp)
+
+## Target executable
+TARGET = cpp-practise
+
+cpp-practise: $(TARGET).cpp $(SRCS)
+	$(CXX) -o $(TARGET) $(TARGET).cpp $(SRCS)

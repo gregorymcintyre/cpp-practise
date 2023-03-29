@@ -12,3 +12,6 @@ TARGET = cpp-practise
 
 cpp-practise: $(TARGET).cpp $(SRCS)
 	$(CXX) -o $(TARGET) $(TARGET).cpp $(SRCS)
+
+clean: 
+	$(RM) $(TARGET)
